@@ -1,0 +1,245 @@
+* {
+  font-family: Arial;
+}
+
+.indications {
+  float: right;
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#mic {
+  width: 9%;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.recordI {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+#serverResponse {
+  color: green;
+}
+
+button {
+  padding: 10px;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1px #42424f;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: white;
+  display: inline-flex;
+}
+
+button[disabled] {
+  opacity: 0.5;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#counting {
+  font-size: 30px;
+}
+
+.main_container {
+  width: 750px;
+  margin: auto;
+}
+
+.inner_container {
+  border: 1px solid #dfdfdf;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px #d3d3d3;
+}
+
+.recordClass {
+  text-align: center;
+  margin-top: 56px;
+  margin-bottom: 30px;
+}
+
+#leftEcho {
+  margin-bottom: 75px;
+}
+
+#rightEcho {
+  margin-bottom: 75px;
+}
+
+.jukeBox {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.counting {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.indicating1:hover .dropdown-content {
+  display: block;
+}
+.indicating1 {
+  display: inline;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.indicating {
+  width: 30px;
+  height: 30px;
+}
+#soundImage {
+  margin-right: 7px;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.postRecording,
+.basicButtons {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#recordItStopper {
+  display: none;
+  width: 80px;
+  padding-left: 14px;
+  padding-right: 6px;
+}
+
+#recordIt {
+  display: inline-flex;
+  width: 80px;
+}
+
+#playerSet {
+  width: 80px;
+  padding-left: 15px;
+}
+#pauseButton {
+  display: inline-flex;
+  width: 91px;
+  padding-left: 14px;
+  padding-right: 6px;
+}
+
+#resumeButton {
+  display: none;
+  width: 91px;
+}
+#pauseButton1 {
+  display: none;
+  width: 80px;
+}
+#resumeButton1 {
+  display: none;
+  width: 80px;
+  padding-left: 4px;
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 270px) and (max-width: 481px) {
+  .inner_container {
+    width: 96%;
+  }
+  .main_container {
+    width: 100%;
+  }
+
+  button {
+    margin: 5px;
+  }
+
+  #mic {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 482px) and (max-width: 767px) {
+  .inner_container {
+    width: 96%;
+  }
+  .main_container {
+    width: 480px;
+  }
+  .postRecording button {
+    margin: 5px;
+  }
+  #mic {
+    width: 15%;
+  }
+}
+@media screen and (min-width: 270px) and (max-width: 767px) {
+  .inner_container {
+    width: 96%;
+  }
+
+  button {
+    margin: 3px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 3000px) {
+  .postRecording button {
+    margin: 3px;
+  }
+  button {
+    margin: 3px;
+  }
+}
+
+button:hover:enabled {
+  /* background-color: rgb(240, 179, 245); */
+  background-color: #f4d0d0;
+  color: red;
+  /* box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001; */
+  /* transition: all 1s ease; */
+}
+button:hover:after {
+  box-shadow: -7px -7px 20px 0px rgba(197, 179, 179, 0.6),
+    -4px -4px 5px 0px rgba(95, 69, 69, 0.6), 7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+  /* transition: all 1s ease; */
+}
+button:active:enabled {
+  background-color: black;
+  color: #ffffff;
+}
